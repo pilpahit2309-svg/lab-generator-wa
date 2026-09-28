@@ -1,1 +1,668 @@
-<p>masih di buat , tunggu dulu</p>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LAPORAN HASIL ANALISA LOSSIS PER 2 JAM</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background: #f5f5f5;
+      }
+
+      .card {
+        margin-top: 20px;
+      }
+
+      textarea {
+        height: 650px;
+        font-family: monospace;
+      }
+
+      h4 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card shadow">
+        <div class="card-body">
+          <h4>LAPORAN HASIL SORTIRAN SAMPLE PADATAN</h4>
+
+          <div class="row">
+            <!-- FORM -->
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label>Salam</label>
+                <select id="salam" class="form-control">
+                  <option>Pagi</option>
+                  <option>Siang</option>
+                  <option>Sore</option>
+                  <option selected>Malam</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>Tanggal</label>
+                <input
+                  type="date"
+                  id="tanggal"
+                  class="form-control"
+                  placeholder="1 Januari 2026"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label>Hari</label>
+                <select id="hari" class="form-control">
+                  <option selected>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                  <option>Sabtu</option>
+                  >
+                </select>
+              </div>
+
+              <hr />
+
+              <h5>RPM 1</h5>
+
+              <input
+                id="rm1_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="rm1_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="rm1_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="rm1_ef"
+                class="form-control mb-2"
+                placeholder="EFFECIENSY"
+                type="number"
+              />
+
+              <hr />
+
+              <h5>RPM 2</h5>
+
+              <input
+                id="rm2_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="rm2_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="rm2_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="rm2_ef"
+                class="form-control mb-2"
+                placeholder="EFFECIENSY"
+                type="number"
+              />
+
+              <h5>RPM 3</h5>
+
+              <input
+                id="rm3_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="rm3_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="rm3_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="rm3_ef"
+                class="form-control mb-2"
+                placeholder="EFFECIENSY"
+                type="number"
+              />
+
+              <h5>RPM 4</h5>
+
+              <input
+                id="rm4_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="rm4_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="rm4_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="rm4_ef"
+                class="form-control mb-2"
+                placeholder="EFFECIENSY"
+                type="number"
+              />
+
+              <h5>RPM 5</h5>
+
+              <input
+                id="rm5_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="rm5_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="rm5_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="rm5_ef"
+                class="form-control mb-2"
+                placeholder="EFFECIENSY"
+                type="number"
+              />
+
+              <h5>RPM 6</h5>
+
+              <input
+                id="rm6_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="rm6_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="rm6_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="rm6_ef"
+                class="form-control mb-2"
+                placeholder="EFFECIENSY"
+                type="number"
+              />
+
+              <hr />
+
+              <h2>Losses Kernel</h2>
+              <h5>LTDS 1</h5>
+              <input
+                id="ltds1_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="ltds1_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="ltds1_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="ltds1_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="ltds1_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>LTDS 2</h5>
+              <input
+                id="ltds2_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="ltds2_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="ltds2_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="ltds2_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="ltds2_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>LTDS 3</h5>
+              <input
+                id="ltds3_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="ltds3_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="ltds3_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="ltds3_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="ltds3_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>LTDS 4</h5>
+              <input
+                id="ltds4_nu"
+                class="form-control mb-2"
+                placeholder="NUT UTUH"
+                type="number"
+              />
+              <input
+                id="ltds4_np"
+                class="form-control mb-2"
+                placeholder="NUT PECAH"
+                type="number"
+              />
+              <input
+                id="ltds4_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="ltds4_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="ltds4_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>FIBER CYCLONE 1</h5>
+              <input
+                id="fbr1_nu"
+                class="form-control mb-2"
+                placeholder="KERNEL DARI NUT UTUH"
+                type="number"
+              />
+              <input
+                id="fbr1_np"
+                class="form-control mb-2"
+                placeholder="KERNEL NUT PECAH"
+                type="number"
+              />
+              <input
+                id="fbr1_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="fbr1_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="fbr1_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>FIBER CYCLONE 2</h5>
+              <input
+                id="fbr2_nu"
+                class="form-control mb-2"
+                placeholder="KERNEL DARI NUT UTUH"
+                type="number"
+              />
+              <input
+                id="fbr2_np"
+                class="form-control mb-2"
+                placeholder="KERNEL NUT PECAH"
+                type="number"
+              />
+              <input
+                id="fbr2_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="fbr2_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="fbr2_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>CANGKANG HYDROCYCLONE 1</h5>
+              <input
+                id="ckg1_nu"
+                class="form-control mb-2"
+                placeholder="KERNEL DARI NUT UTUH"
+                type="number"
+              />
+              <input
+                id="ckg1_np"
+                class="form-control mb-2"
+                placeholder="KERNEL NUT PECAH"
+                type="number"
+              />
+              <input
+                id="ckg1_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="ckg1_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="ckg1_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <h5>CANGKANG HYDROCYCLONE 2</h5>
+              <input
+                id="ckg2_nu"
+                class="form-control mb-2"
+                placeholder="KERNEL DARI NUT UTUH"
+                type="number"
+              />
+              <input
+                id="ckg2_np"
+                class="form-control mb-2"
+                placeholder="KERNEL NUT PECAH"
+                type="number"
+              />
+              <input
+                id="ckg2_ku"
+                class="form-control mb-2"
+                placeholder="KERNEL UTUH"
+                type="number"
+              />
+              <input
+                id="ckg2_kp"
+                class="form-control mb-2"
+                placeholder="KERNEL PECAH"
+                type="number"
+              />
+              <input
+                id="ckg2_t"
+                class="form-control mb-2"
+                placeholder="TOTAL LOSSES"
+                type="number"
+              />
+              <hr />
+
+              <button class="btn btn-success" onclick="buatPesan()">
+                Generate
+              </button>
+
+              <button class="btn btn-primary" onclick="salin()">Salin</button>
+
+              <button class="btn btn-success" onclick="wa()">WhatsApp</button>
+            </div>
+
+            <!-- HASIL -->
+            <div class="col-md-6">
+              <textarea id="hasil" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function v(id) {
+        return document.getElementById(id).value;
+      }
+
+      function buatPesan() {
+        let pesan = `Selamat ${v("salam")}
+Berikut monitoring Losses Sample kuarting Padatan 
+
+Hari : ${v("hari")}
+Tanggal : ${v("tanggal")} 
+
+*B. Sample Padatan*
+*1. Effeciensy Ripple Mill :*
+
+*> Ripple Mill No 1*
+-Nut Utuh : *${v("rm1_nu")} %*
+-Nut Pecah : *${v("rm1_np")} %*
+-Kernel Pecah : *${v("rm1_kp")} %*
+-Effeciensy : *${v("rm1_ef")} %*
+Note :
+
+*> Ripple Mill No 2*
+-Nut Utuh : *${v("rm2_nu")} %*
+-Nut Pecah : *${v("rm2_np")} %*
+-Kernel Pecah : *${v("rm2_kp")} %*
+-Effeciensy : *${v("rm2_ef")} %*
+Note :
+
+*> Ripple Mill No 3*
+-Nut Utuh : *${v("rm3_nu")} %*
+-Nut Pecah : *${v("rm3_np")} %*
+-Kernel Pecah : *${v("rm3_kp")} %*
+-Effeciensy : *${v("rm3_ef")} %*
+Note :
+
+*> Ripple Mill No 4*
+-Nut Utuh : *${v("rm4_nu")} %*
+-Nut Pecah : *${v("rm4_np")} %*
+-Kernel Pecah : *${v("rm4_kp")} %*
+-Effeciensy : *${v("rm4_ef")} %*
+Note :
+
+*> Ripple Mill No 5*
+-Nut Utuh : *${v("rm5_nu")} %*
+-Nut Pecah : *${v("rm5_np")} %*
+-Kernel Pecah : *${v("rm5_kp")} %*
+-Effeciensy : *${v("rm5_ef")} %*
+Note :
+
+*> Ripple Mill No 6*
+-Nut Utuh : *${v("rm6_np")} %*
+-Nut Pecah : *${v("rm6_nu")} %*
+-Kernel Pecah : *${v("rm6_kp")} %*
+-Effeciensy : *${v("rm6_ef")} %*
+Note :
+
+
+*2. losses Kernel*
+*> LTDS No 1*
+-Nut Utuh : *${v("ltds1_nu")} %*
+-Nut Pecah : *${v("ltds1_np")} %*
+-Kernel Utuh : *${v("ltds1_ku")} %*
+-Kernel Pecah : *${v("ltds1_kp")} %*
+-Total Losses : *${v("ltds1_t")} %*
+Note :
+
+*> LTDS No 2*
+-Nut Utuh : *${v("ltds2_nu")} %*
+-Nut Pecah : *${v("ltds2_np")} %*
+-Kernel Utuh : *${v("ltds2_ku")} %*
+-Kernel Pecah : *${v("ltds2_kp")} %*
+-Total Losses : *${v("ltds2_t")} %*
+Note :
+
+*> LTDS No 3*
+-Nut Utuh : *${v("ltds3_nu")} %*
+-Nut Pecah : *${v("ltds3_np")} %*
+-Kernel Utuh : *${v("ltds3_ku")} %*
+-Kernel Pecah : *${v("ltds3_kp")} %*
+-Total Losses : *${v("ltds3_t")} %*
+Note :
+
+*> LTDS No 4*
+-Nut Utuh : *${v("ltds4_nu")} %*
+-Nut Pecah : *${v("ltds4_np")} %*
+-Kernel Utuh : *${v("ltds4_ku")} %*
+-Kernel Pecah : *${v("ltds4_kp")} %*
+-Total Losses : *${v("ltds4_t")} %*
+Note :
+
+*> Fiber Cylone 1*
+-Kernel Nut Utuh : *${v("fbr1_nu")} %*
+-Kernel Nut Pecah : *${v("fbr1_np")} %*
+-Kernel Utuh : *${v("fbr1_ku")} %*
+-Kernel Pecah : *${v("fbr1_kp")} %*
+-Total Losses : *${v("fbr1_t")} %*
+Note :
+
+*> Fiber Cylone 2*
+-Kernel Nut Utuh : *${v("fbr2_nu")} %*
+-Kernel Nut Pecah : *${v("fbr2_np")} %*
+-Kernel Utuh : *${v("fbr2_ku")} %*
+-Kernel Pecah : *${v("fbr2_kp")} %*
+-Total Losses : *${v("fbr2_t")} %*
+Note :
+
+*> Cangkang Hydrocyclone 1*
+-Kernel Nut Utuh : *${v("ckg1_nu")} %*
+-Kernel Nut Pecah : *${v("ckg1_np")} %*
+-Kernel Utuh : *${v("ckg1_ku")} %*
+-Kernel Pecah : *${v("ckg1_kp")} %*
+-Total Losses : *${v("ckg1_t")} %*
+Note :
+
+*> Cangkang Hydrocyclone 2*
+-Kernel Nut Utuh : *${v("ckg2_nu")} %*
+-Kernel Nut Pecah : *${v("ckg2_np")} %*
+-Kernel Utuh : *${v("ckg2_ku")} %*
+-Kernel Pecah : *${v("ckg2_kp")} %*
+-Total Losses : *${v("ckg2_t")} %*
+Note :
+
+*Terima kasih.*`;
+
+        document.getElementById("hasil").value = pesan;
+      }
+
+      function salin() {
+        navigator.clipboard.writeText(document.getElementById("hasil").value);
+
+        alert("Pesan berhasil disalin");
+      }
+
+      function wa() {
+        let text = encodeURIComponent(document.getElementById("hasil").value);
+
+        window.open("https://wa.me/?text=" + text);
+      }
+    </script>
+  </body>
+</html>
