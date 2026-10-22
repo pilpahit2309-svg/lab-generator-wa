@@ -36,20 +36,11 @@
       <div class="card shadow">
         <div class="card-body">
           <h4>Generator Pesan WhatsApp Laboratorium PKS</h4>
-
+          <h5>MUTU & LOSSES PKS</h5>
+          <br />
           <div class="row">
             <!-- FORM -->
             <div class="col-md-6">
-              <div class="mb-3">
-                <label>Salam</label>
-                <select id="salam" class="form-control">
-                  <option>Pagi</option>
-                  <option>Siang</option>
-                  <option>Sore</option>
-                  <option selected>Malam</option>
-                </select>
-              </div>
-
               <div class="mb-3">
                 <label>Tanggal</label>
                 <input
@@ -131,10 +122,30 @@
 
               <h5>Bunch Press</h5>
 
-              <input id="bp1" class="form-control mb-2" placeholder="No.1" type="number"/>
-              <input id="bp2" class="form-control mb-2" placeholder="No.2" type="number"/>
-              <input id="bp3" class="form-control mb-2" placeholder="No.3" type="number"/>
-              <input id="bp4" class="form-control mb-2" placeholder="No.4" type="number"/>
+              <input
+                id="bp1"
+                class="form-control mb-2"
+                placeholder="No.1"
+                type="number"
+              />
+              <input
+                id="bp2"
+                class="form-control mb-2"
+                placeholder="No.2"
+                type="number"
+              />
+              <input
+                id="bp3"
+                class="form-control mb-2"
+                placeholder="No.3"
+                type="number"
+              />
+              <input
+                id="bp4"
+                class="form-control mb-2"
+                placeholder="No.4"
+                type="number"
+              />
 
               <hr />
 
@@ -142,30 +153,49 @@
                 id="allhp"
                 class="form-control mb-2"
                 placeholder="All HP"
-              type="number"/>
+                type="number"
+              />
 
               <input
                 id="finalfe"
                 class="form-control mb-2"
                 placeholder="Final FE"
-              type="number"/>
+                type="number"
+              />
 
               <hr />
 
               <h5>SOLID DECANTER</h5>
 
-              <input id="solid1" class="form-control mb-2" placeholder="Solid 1" type="number"/>
+              <input
+                id="solid1"
+                class="form-control mb-2"
+                placeholder="Solid 1"
+                type="number"
+              />
               <input
                 id="solid2"
                 class="form-control mb-2"
                 placeholder="Solid 2"
-              type="number"/>
-              <input id="solid3" class="form-control mb-2" placeholder="Solid 3" type="number"/>
-              
-              
+                type="number"
+              />
+              <input
+                id="solid3"
+                class="form-control mb-2"
+                placeholder="Solid 3"
+                type="number"
+              />
 
               <hr />
+              <h5>FFA COT</h5>
 
+              <input
+                id="cot"
+                class="form-control mb-2"
+                placeholder="FFA cot"
+                type="number"
+              />
+              <hr />
               <h5>CPO Produksi V1</h5>
 
               <input id="v1ffa" class="form-control mb-2" placeholder="FFA" />
@@ -173,20 +203,37 @@
                 id="v1moist"
                 class="form-control mb-2"
                 placeholder="Moist"
-              type="number"/>
-              <input id="v1dobi" class="form-control mb-2" placeholder="DOBI" type="number"/>
+                type="number"
+              />
+              <input
+                id="v1dobi"
+                class="form-control mb-2"
+                placeholder="DOBI"
+                type="number"
+              />
 
               <hr />
 
               <h5>CPO Produksi V2</h5>
 
-              <input id="v2ffa" class="form-control mb-2" placeholder="FFA" type="number"/>
+              <input
+                id="v2ffa"
+                class="form-control mb-2"
+                placeholder="FFA"
+                type="number"
+              />
               <input
                 id="v2moist"
                 class="form-control mb-2"
                 placeholder="Moist"
-              type="number"/>
-              <input id="v2dobi" class="form-control mb-2" placeholder="DOBI" type="number"/>
+                type="number"
+              />
+              <input
+                id="v2dobi"
+                class="form-control mb-2"
+                placeholder="DOBI"
+                type="number"
+              />
 
               <br />
 
@@ -214,55 +261,70 @@
       }
 
       function buatPesan() {
-        let pesan = `Selamat ${v("salam")}
+        let pesan = `*MONITORING MUTU & LOSSES PKS SATUI*
+*Tanggal:* ${v("tanggal")}
+*Pukul:* ${v("jam")} WITA
 
-Berikut monitoring mutu & Lossis PKS Satui
-${v("tanggal")}
+==================
+*I. LOSSES (KEHILANGAN MINYAK)*
+==================
 
-Sample / 2 jam
-Pukul ${v("jam")} WITA
+*1. Fibre Press (Std < 4.00%)*
+• No. 1 : *${v("fp1")} %*
+• No. 2 : *${v("fp2")} %*
+• No. 3 : *${v("fp3")} %*
+• No. 4 : *${v("fp4")} %*
+• No. 5 : *${v("fp5")} %*
+• No. 6 : *${v("fp6")} %*
+_Note:_ [ ... ]
 
-*1. Fibre Press (Std <4 %)*
-No.1 : *${v("fp1")} %*
-No.2 : *${v("fp2")} %*
-No.3 : *${v("fp3")} %*
-No.4 : *${v("fp4")} %*
-No.5 : *${v("fp5")} %*
-No.6 : *${v("fp6")} %*
-Note :
+*2. Bunch Press (Std < 1.50%)*
+• No. 1 : *${v("bp1")} %*
+• No. 2 : *${v("bp2")} %*
+• No. 3 : *${v("bp3")} %*
+• No. 4 : *${v("bp4")} %*
+_Note:_ 
 
-*2. Bunch Press (Std <1.5 %)*
-No.1 : *${v("bp1")} %*
-No.2 : *${v("bp2")} %*
-No.3 : *${v("bp3")} %*
-No.4 : *${v("bp4")} %*
-Note :
+*3. All Heavy Phase / HP Tank*
+• Losses : *${v("allhp")} %*
+_Note:_ [ ... ]
 
-*3. All HP : ${v("allhp")} %*
-Note :
+*4. Final Effluent / FE (Std < 0.80%)*
+• Losses : *${v("finalfe")} %*
+_Note:_ [ ... ]
 
-*4. Final FE : ${v("finalfe")} % (Std <0.8 %)*
-Note :
+*5. Solid Decanter (Std < 4.00%)*
+• Solid 1 : *${v("solid1")} %*
+• Solid 2 : *${v("solid2")} %*
+• Solid 3 : *${v("solid3")} %*
+_Note:_ [ ... ]
 
-*5. Solid Decanter*
-Solid 1 : *${v("solid1")} %*
-Solid 2 : *${v("solid2")} %*
-Solid 3 : *${v("solid3")} %*
-Note :
+==================
+*II. MUTU & MUTU FFA*
+==================
 
-*6. CPO Produksi V1*
-FFA : *${v("v1ffa")} % (Std <5%)*
-Moist : *${v("v1moist")} % (Std <0.150%)*
-DOBI : *${v("v1dobi")} (Std >2)*
-Note :
+*6. COT (Crude Oil Tank) / Oil Press*
+• FFA : *${v("cot")} %* (Std < 4.00%)
+_Note:_ 
 
-*7. CPO Produksi V2*
-FFA : *${v("v2ffa")} % (Std <5%)*
-Moist : *${v("v2moist")} % (Std <0.150%)*
-DOBI : *${v("v2dobi")} (Std >2)*
-Note :
+*7. CPO Produksi Vacuum Dryer 1 (V1)*
+• FFA : *${v("v1ffa")} %* (Std <5.00%)
+• Moist : *${v("v1moist")} %* (Std < 0.150%)
+• DOBI : *${v("v1dobi")}* (Std > 2.00)
+_Note:_ 
 
-*Terima kasih.*`;
+*8. CPO Produksi Vacuum Dryer 2 (V2)*
+• FFA :  *${v("v2ffa")} %*(Std < 5.00%)
+• Moist : *${v("v2moist")} %* (Std < 0.150%)
+• DOBI : *${v("v2dobi")}* (Std > 2.00)
+_Note:_ 
+
+==================
+Demikian disampaikan, terima kasih.
+
+
+
+`;
 
         document.getElementById("hasil").value = pesan;
       }
